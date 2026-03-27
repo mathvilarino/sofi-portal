@@ -4,7 +4,6 @@ import { useState, useEffect, useRef } from "react";
 import { Sparkles, ArrowRight, ChevronDown } from "lucide-react";
 import { stats } from "@/app/data/stats";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
-import { EcosystemLogo } from "@/components/ui/EcosystemLogo";
 import { platforms } from "@/app/data/platforms";
 
 export function HeroSection() {
@@ -28,10 +27,6 @@ export function HeroSection() {
       <div className="absolute bottom-[-20%] right-[10%] w-[600px] h-[600px] bg-rose-500/[0.04] rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: "2s" }} />
 
       <div className="relative z-10 text-center max-w-4xl animate-fade-in-up animate-fade-in-up-1">
-        <div className="mb-8">
-          <EcosystemLogo size="hero" />
-        </div>
-
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-xs text-gray-500 mb-10 uppercase tracking-widest font-medium">
           <Sparkles className="w-3 h-3 text-indigo-400" />
           Enterprise Data Platform

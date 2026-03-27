@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { platforms } from "@/app/data/platforms";
-import { EcosystemLogo } from "@/components/ui/EcosystemLogo";
 
 export function NavBar() {
   const [scrolled, setScrolled] = useState(false);
@@ -24,7 +23,6 @@ export function NavBar() {
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3">
-          <EcosystemLogo size="navbar" />
           <div className="flex flex-col">
             <span className="text-sm font-bold tracking-tight text-white leading-none">SOFI</span>
             <span className="text-[9px] font-medium uppercase tracking-widest text-gray-500 leading-none mt-0.5">Data Ecosystem</span>
