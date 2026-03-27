@@ -52,6 +52,11 @@ body {
   75%, 100% { transform: scale(2.5); opacity: 0; }
 }
 
+@keyframes logo-draw-on {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
+}
+
 .animate-gradient {
   background-size: 200% 200%;
   animation: gradient-shift 8s ease infinite;
@@ -82,6 +87,12 @@ body {
 .animate-shimmer {
   background-size: 200% auto;
   animation: shimmer 3s linear infinite;
+}
+
+.logo-draw {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: logo-draw-on 1.5s ease-out forwards;
 }
 
 /* ── Glass ── */
@@ -138,4 +149,34 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.2);
+}
+
+/* -- Reduced Motion -- */
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-pulse-glow,
+  .animate-float,
+  .animate-float-delayed,
+  .animate-gradient,
+  .animate-shimmer {
+    animation: none !important;
+  }
+
+  .status-dot::before {
+    animation: none !important;
+  }
+
+  .logo-draw {
+    animation: none !important;
+    stroke-dashoffset: 0;
+  }
+
+  .animate-fade-in-up,
+  .animate-fade-in-up-1,
+  .animate-fade-in-up-2,
+  .animate-fade-in-up-3,
+  .animate-fade-in-up-4 {
+    animation: none !important;
+    opacity: 1;
+  }
 }
