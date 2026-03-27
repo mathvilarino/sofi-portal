@@ -25,11 +25,11 @@
 
 ### Hero (HERO) — Seção principal redesenhada
 
-- [ ] **HERO-01**: Headline principal em Inter 800 com hierarquia de peso clara (hero > subtítulo > body)
-- [ ] **HERO-02**: Subtítulo com proof point objetivo (sem jargão genérico)
-- [ ] **HERO-03**: Dois CTAs visíveis no hero: um por plataforma com cores correspondentes (indigo/rose)
-- [ ] **HERO-04**: Logo do ecossistema presente e visualmente ancorado no hero
-- [ ] **HERO-05**: Layout responsivo preservado em mobile, tablet e desktop
+- [x] **HERO-01**: Headline principal em Inter 800 com hierarquia de peso clara (hero > subtítulo > body)
+- [x] **HERO-02**: Subtítulo com proof point objetivo (sem jargão genérico)
+- [x] **HERO-03**: Dois CTAs visíveis no hero: um por plataforma com cores correspondentes (indigo/rose)
+- [x] **HERO-04**: Logo do ecossistema presente e visualmente ancorado no hero
+- [x] **HERO-05**: Layout responsivo preservado em mobile, tablet e desktop
 
 ### Polish (POLISH) — Refinamento visual e tipográfico
 
@@ -38,7 +38,7 @@
 - [x] **POLISH-03**: Hover nos cards de plataforma: elevação + border glow com cor da plataforma (indigo/rose)
 - [x] **POLISH-04**: Stats com micro-contexto: uma linha de referência abaixo de cada contador
 - [ ] **POLISH-05**: `prefers-reduced-motion` implementado — animações contínuas pausam via `@media`
-- [ ] **POLISH-06**: `next build` produz output sem erros e static export funciona localmente
+- [x] **POLISH-06**: `next build` produz output sem erros e static export funciona localmente
 
 ### Use Cases (UC) — Showcase de casos de uso por papel
 
@@ -95,17 +95,17 @@
 | BRAND-02 | Phase 2 | Pending |
 | BRAND-03 | Phase 2 | Pending |
 | BRAND-04 | Phase 2 | Pending |
-| HERO-01 | Phase 2 | Pending |
-| HERO-02 | Phase 2 | Pending |
-| HERO-03 | Phase 2 | Pending |
-| HERO-04 | Phase 2 | Pending |
-| HERO-05 | Phase 2 | Pending |
+| HERO-01 | Phase 2 | Complete |
+| HERO-02 | Phase 2 | Complete |
+| HERO-03 | Phase 2 | Complete |
+| HERO-04 | Phase 2 | Complete |
+| HERO-05 | Phase 2 | Complete |
 | POLISH-01 | Phase 2 | Complete |
 | POLISH-02 | Phase 2 | Complete |
 | POLISH-03 | Phase 2 | Complete |
 | POLISH-04 | Phase 2 | Complete |
 | POLISH-05 | Phase 2 | Pending |
-| POLISH-06 | Phase 2 | Pending |
+| POLISH-06 | Phase 2 | Complete |
 | UC-01 | Phase 3 | Pending |
 | UC-02 | Phase 3 | Pending |
 | UC-03 | Phase 3 | Pending |

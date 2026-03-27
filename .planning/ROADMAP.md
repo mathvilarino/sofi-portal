@@ -51,9 +51,9 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — Create EcosystemLogo SVG component, LazyMotionProvider, favicon, and reduced-motion CSS
+- [x] 02-01-PLAN.md — Create EcosystemLogo SVG component, LazyMotionProvider, favicon, and reduced-motion CSS
 - [x] 02-02-PLAN.md — Add eyebrow labels to sections, fix text contrast, verify card hover glow and stat sublabels
-- [ ] 02-03-PLAN.md — Redesign hero with logo, dual CTAs, proof-point subtitle; integrate logo into navbar; final build gate
+- [x] 02-03-PLAN.md — Redesign hero with logo, dual CTAs, proof-point subtitle; integrate logo into navbar; final build gate
 
 **UI hint**: yes
 
