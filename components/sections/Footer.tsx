@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Code2 } from "lucide-react";
 import { platforms } from "@/app/data/platforms";
 
