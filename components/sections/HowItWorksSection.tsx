@@ -28,7 +28,7 @@ export function HowItWorksSection() {
                   <step.icon className={`w-5 h-5 ${step.color}`} />
                 </div>
                 <h3 className="text-sm font-semibold text-white mb-2">{step.title}</h3>
-                <p className="text-[13px] text-gray-500 leading-relaxed">{step.description}</p>
+                <p className="text-[13px] text-gray-400 leading-relaxed">{step.description}</p>
                 {i < 3 && (
                   <div className="hidden lg:block absolute top-1/2 -right-3 text-gray-700">
                     <ArrowRight className="w-5 h-5" />

@@ -42,7 +42,7 @@ export function HeroSection() {
             SOFI
           </span>
           <span className="block mt-3 text-base sm:text-lg font-medium tracking-[0.3em] uppercase text-gray-500">
-            Data Ecossystem
+            Data Ecosystem
           </span>
         </h1>
 
