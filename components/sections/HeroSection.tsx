@@ -4,6 +4,8 @@ import { useState, useEffect, useRef } from "react";
 import { Sparkles, ArrowRight, ChevronDown } from "lucide-react";
 import { stats } from "@/app/data/stats";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
+import { EcosystemLogo } from "@/components/ui/EcosystemLogo";
+import { platforms } from "@/app/data/platforms";
 
 export function HeroSection() {
   const statsRef = useRef<HTMLDivElement>(null);
@@ -26,6 +28,10 @@ export function HeroSection() {
       <div className="absolute bottom-[-20%] right-[10%] w-[600px] h-[600px] bg-rose-500/[0.04] rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: "2s" }} />
 
       <div className="relative z-10 text-center max-w-4xl animate-fade-in-up animate-fade-in-up-1">
+        <div className="mb-8">
+          <EcosystemLogo size="hero" />
+        </div>
+
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-xs text-gray-500 mb-10 uppercase tracking-widest font-medium">
           <Sparkles className="w-3 h-3 text-indigo-400" />
           Enterprise Data Platform
@@ -35,31 +41,40 @@ export function HeroSection() {
           <span className="block text-7xl sm:text-8xl lg:text-9xl font-black tracking-tighter bg-gradient-to-b from-white via-white to-gray-600 bg-clip-text text-transparent leading-[0.9]">
             SOFI
           </span>
-          <span className="block mt-3 text-base sm:text-lg font-light tracking-[0.3em] uppercase text-gray-600">
+          <span className="block mt-3 text-base sm:text-lg font-medium tracking-[0.3em] uppercase text-gray-500">
             Data Ecossystem
           </span>
         </h1>
 
-        <p className="text-lg sm:text-xl text-gray-400 leading-relaxed max-w-2xl mx-auto mb-4 font-light">
-          Virtualize, governe e consuma dados de qualquer fonte —{" "}
-          <span className="text-gray-300">sem copiar, em tempo real, com IA.</span>
+        <p className="text-lg sm:text-xl text-gray-400 leading-relaxed max-w-2xl mx-auto mb-4">
+          Virtualização e governança de dados em tempo real.{" "}
+          <span className="text-gray-300">Sem cópias. Sem ETL. Sem complexidade.</span>
         </p>
-        <p className="text-sm text-gray-600 mb-10 max-w-lg mx-auto">
+        <p className="text-sm text-gray-500 mb-10 max-w-lg mx-auto">
           Duas plataformas complementares que substituem soluções como Delphix e Denodo
           com uma stack moderna, open e enterprise-ready.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
           <a
-            href="#platforms"
+            href={platforms[0].url}
             className="inline-flex items-center gap-2 px-8 py-3 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 transition-all duration-300 shadow-xl shadow-indigo-500/20"
           >
-            Explorar plataformas
+            Explorar SOFIX Engine
             <ArrowRight className="w-4 h-4" />
           </a>
           <a
+            href={platforms[1].url}
+            className="inline-flex items-center gap-2 px-8 py-3 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-rose-600 to-pink-600 hover:from-rose-500 hover:to-pink-500 transition-all duration-300 shadow-xl shadow-rose-500/20"
+          >
+            Explorar SOFI Virtualization
+            <ArrowRight className="w-4 h-4" />
+          </a>
+        </div>
+        <div className="flex justify-center mb-12">
+          <a
             href="#how-it-works"
-            className="inline-flex items-center gap-2 px-8 py-3 rounded-xl text-sm font-medium text-gray-400 glass hover:text-white transition-all duration-300"
+            className="inline-flex items-center gap-2 px-6 py-2 rounded-xl text-sm font-medium text-gray-400 glass hover:text-white transition-all duration-300"
           >
             Como funciona
             <ChevronDown className="w-4 h-4" />
