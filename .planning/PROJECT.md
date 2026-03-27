@@ -22,11 +22,11 @@ O visitante deve entender o SOFI Data Ecosystem em segundos e saber exatamente p
 
 ### Active
 
-- [ ] Hero section mais impactante com identidade visual do ecossistema
-- [ ] Logo / marca para SOFI Data Ecosystem (conceito: "S" estilo infinity symbol, com sugestão alternativa)
+- [x] Hero section mais impactante com identidade visual do ecossistema — Validated in Phase 2: Identidade Visual
+- [x] Logo / marca para SOFI Data Ecosystem — Validated in Phase 2: Identidade Visual
 - [ ] Casos de uso por plataforma: perfis de usuário + cenários de negócio
-- [ ] Tipografia e hierarquia visual melhoradas
-- [ ] Animações e micro-interações mais polidas
+- [x] Tipografia e hierarquia visual melhoradas — Validated in Phase 2
+- [x] Animações e micro-interações mais polidas — Validated in Phase 2
 - [x] Refatoração da estrutura de código (componentes e dados separados) — Validated in Phase 1: Foundation
 
 ### Out of Scope
