@@ -18,10 +18,10 @@
 
 ### Brand (BRAND) — Identidade visual do ecossistema
 
-- [x] **BRAND-01**: Logo SVG do SOFI Data Ecosystem criado (conceito "S" / infinity, baseado em stroke para animação)
-- [x] **BRAND-02**: Logo animado com CSS `stroke-dashoffset` keyframe (sem hidration mismatch)
-- [x] **BRAND-03**: Logo renderiza corretamente em 3 tamanhos: navbar (24px), hero (80px), favicon
-- [x] **BRAND-04**: `LazyMotion` + `domAnimation` configurado antes de qualquer uso de `motion.*`
+- [ ] **BRAND-01**: Logo SVG do SOFI Data Ecosystem criado (conceito "S" / infinity, baseado em stroke para animação)
+- [ ] **BRAND-02**: Logo animado com CSS `stroke-dashoffset` keyframe (sem hidration mismatch)
+- [ ] **BRAND-03**: Logo renderiza corretamente em 3 tamanhos: navbar (24px), hero (80px), favicon
+- [ ] **BRAND-04**: `LazyMotion` + `domAnimation` configurado antes de qualquer uso de `motion.*`
 
 ### Hero (HERO) — Seção principal redesenhada
 
@@ -33,11 +33,11 @@
 
 ### Polish (POLISH) — Refinamento visual e tipográfico
 
-- [ ] **POLISH-01**: Eyebrow labels adicionados às seções principais (`PLATAFORMAS`, `COMO FUNCIONA`, `ECOSSISTEMA`)
-- [ ] **POLISH-02**: Texto informacional usa no mínimo `text-gray-400` (WCAG AA em fundo escuro)
-- [ ] **POLISH-03**: Hover nos cards de plataforma: elevação + border glow com cor da plataforma (indigo/rose)
-- [ ] **POLISH-04**: Stats com micro-contexto: uma linha de referência abaixo de cada contador
-- [x] **POLISH-05**: `prefers-reduced-motion` implementado — animações contínuas pausam via `@media`
+- [x] **POLISH-01**: Eyebrow labels adicionados às seções principais (`PLATAFORMAS`, `COMO FUNCIONA`, `ECOSSISTEMA`)
+- [x] **POLISH-02**: Texto informacional usa no mínimo `text-gray-400` (WCAG AA em fundo escuro)
+- [x] **POLISH-03**: Hover nos cards de plataforma: elevação + border glow com cor da plataforma (indigo/rose)
+- [x] **POLISH-04**: Stats com micro-contexto: uma linha de referência abaixo de cada contador
+- [ ] **POLISH-05**: `prefers-reduced-motion` implementado — animações contínuas pausam via `@media`
 - [ ] **POLISH-06**: `next build` produz output sem erros e static export funciona localmente
 
 ### Use Cases (UC) — Showcase de casos de uso por papel
@@ -91,20 +91,20 @@
 | ARCH-06 | Phase 1 | Complete |
 | ARCH-07 | Phase 1 | Complete |
 | ARCH-08 | Phase 1 | Complete |
-| BRAND-01 | Phase 2 | Complete |
-| BRAND-02 | Phase 2 | Complete |
-| BRAND-03 | Phase 2 | Complete |
-| BRAND-04 | Phase 2 | Complete |
+| BRAND-01 | Phase 2 | Pending |
+| BRAND-02 | Phase 2 | Pending |
+| BRAND-03 | Phase 2 | Pending |
+| BRAND-04 | Phase 2 | Pending |
 | HERO-01 | Phase 2 | Pending |
 | HERO-02 | Phase 2 | Pending |
 | HERO-03 | Phase 2 | Pending |
 | HERO-04 | Phase 2 | Pending |
 | HERO-05 | Phase 2 | Pending |
-| POLISH-01 | Phase 2 | Pending |
-| POLISH-02 | Phase 2 | Pending |
-| POLISH-03 | Phase 2 | Pending |
-| POLISH-04 | Phase 2 | Pending |
-| POLISH-05 | Phase 2 | Complete |
+| POLISH-01 | Phase 2 | Complete |
+| POLISH-02 | Phase 2 | Complete |
+| POLISH-03 | Phase 2 | Complete |
+| POLISH-04 | Phase 2 | Complete |
+| POLISH-05 | Phase 2 | Pending |
 | POLISH-06 | Phase 2 | Pending |
 | UC-01 | Phase 3 | Pending |
 | UC-02 | Phase 3 | Pending |
