@@ -48,7 +48,13 @@ Plans:
   3. Seções principais têm eyebrow labels (`PLATAFORMAS`, `COMO FUNCIONA`, `ECOSSISTEMA`); todo texto informacional usa no mínimo `text-gray-400`
   4. Cards de plataforma exibem elevação + border glow na cor da plataforma ao hover; stats exibem uma linha de micro-contexto abaixo de cada contador
   5. `prefers-reduced-motion` pausa animações contínuas; `next build` produz static export sem erros; Lighthouse não reporta falhas de contraste WCAG AA
-**Plans**: TBD
+**Plans**: 3 plans
+
+Plans:
+- [ ] 02-01-PLAN.md — Create EcosystemLogo SVG component, LazyMotionProvider, favicon, and reduced-motion CSS
+- [ ] 02-02-PLAN.md — Add eyebrow labels to sections, fix text contrast, verify card hover glow and stat sublabels
+- [ ] 02-03-PLAN.md — Redesign hero with logo, dual CTAs, proof-point subtitle; integrate logo into navbar; final build gate
+
 **UI hint**: yes
 
 ### Phase 3: Casos de Uso
@@ -70,6 +76,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 3/4 | In Progress|  |
-| 2. Identidade Visual | 0/TBD | Not started | - |
+| 1. Foundation | 4/4 | Complete |  |
+| 2. Identidade Visual | 0/3 | Not started | - |
 | 3. Casos de Uso | 0/TBD | Not started | - |
