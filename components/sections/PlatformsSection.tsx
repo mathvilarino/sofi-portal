@@ -13,10 +13,11 @@ export function PlatformsSection() {
       <div className="max-w-5xl mx-auto">
         <Section>
           <div className="text-center mb-14">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500 mb-3">PLATAFORMAS</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Duas plataformas, um ecossistema
             </h2>
-            <p className="text-gray-500 max-w-lg mx-auto">
+            <p className="text-gray-400 max-w-lg mx-auto">
               Soluções complementares que cobrem todo o ciclo de vida dos dados — da virtualização ao consumo governado.
             </p>
           </div>
