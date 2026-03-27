@@ -9,7 +9,7 @@
 
 - [x] **ARCH-01**: Dados das plataformas extraídos para `app/data/platforms.ts` com interface TypeScript
 - [x] **ARCH-02**: Dados de stats, ecosystemFeatures, howItWorks extraídos para arquivos `app/data/*.ts`
-- [ ] **ARCH-03**: Primitivas UI (`Section`, `StatusDot`, `AnimatedCounter`) extraídas para `components/ui/`
+- [x] **ARCH-03**: Primitivas UI (`Section`, `StatusDot`, `AnimatedCounter`) extraídas para `components/ui/`
 - [ ] **ARCH-04**: Cada seção da página extraída para arquivo próprio em `components/sections/`
 - [ ] **ARCH-05**: Sub-componentes de plataforma (`PlatformCard`, mockups) extraídos para `components/platform/`
 - [ ] **ARCH-06**: `app/page.tsx` reduzido a composição pura (imports + JSX, sem data inline)
@@ -85,7 +85,7 @@
 |-------------|-------|--------|
 | ARCH-01 | Phase 1 | Complete |
 | ARCH-02 | Phase 1 | Complete |
-| ARCH-03 | Phase 1 | Pending |
+| ARCH-03 | Phase 1 | Complete |
 | ARCH-04 | Phase 1 | Pending |
 | ARCH-05 | Phase 1 | Pending |
 | ARCH-06 | Phase 1 | Pending |
