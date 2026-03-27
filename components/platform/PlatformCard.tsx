@@ -24,7 +24,7 @@ export function PlatformCard({
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       className={`block group relative rounded-2xl overflow-hidden glass cursor-pointer transition-all duration-500 ${
-        hoveredCard === platform.id ? "scale-[1.01]" : ""
+        hoveredCard === platform.id ? "scale-[1.01] shadow-2xl" : ""
       }`}
       style={{
         boxShadow: hoveredCard === platform.id ? `0 0 80px ${platform.glowColor}` : "none",
@@ -66,7 +66,7 @@ export function PlatformCard({
         {/* Features */}
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-3 gap-y-1.5 mb-5">
           {platform.features.map((feature) => (
-            <div key={feature.label} className="flex items-center gap-1.5 text-[12px] text-gray-500 group-hover:text-gray-400 transition-colors">
+            <div key={feature.label} className="flex items-center gap-1.5 text-[12px] text-gray-400 group-hover:text-gray-300 transition-colors">
               <feature.icon className={`w-3 h-3 ${platform.accentColor} opacity-40 group-hover:opacity-70 transition-opacity flex-shrink-0`} />
               {feature.label}
             </div>
