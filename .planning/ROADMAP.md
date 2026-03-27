@@ -33,7 +33,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 Plans:
 - [x] 01-01-PLAN.md — Extract data layer (app/data/*.ts) and run Gate 1 build
 - [x] 01-02-PLAN.md — Extract UI primitives (components/ui/) and run Gate 2 build
-- [ ] 01-03-PLAN.md — Extract platform sub-components (components/platform/) and run Gate 3 build
+- [x] 01-03-PLAN.md — Extract platform sub-components (components/platform/) and run Gate 3 build
 - [ ] 01-04-PLAN.md — Extract all sections (components/sections/), reduce page.tsx, run Gate 4 build
 
 **UI hint**: yes
@@ -70,6 +70,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 2/4 | In Progress|  |
+| 1. Foundation | 3/4 | In Progress|  |
 | 2. Identidade Visual | 0/TBD | Not started | - |
 | 3. Casos de Uso | 0/TBD | Not started | - |
