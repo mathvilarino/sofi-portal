@@ -31,7 +31,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 4 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Extract data layer (app/data/*.ts) and run Gate 1 build
+- [x] 01-01-PLAN.md — Extract data layer (app/data/*.ts) and run Gate 1 build
 - [ ] 01-02-PLAN.md — Extract UI primitives (components/ui/) and run Gate 2 build
 - [ ] 01-03-PLAN.md — Extract platform sub-components (components/platform/) and run Gate 3 build
 - [ ] 01-04-PLAN.md — Extract all sections (components/sections/), reduce page.tsx, run Gate 4 build
