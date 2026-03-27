@@ -33,10 +33,10 @@
 
 ### Polish (POLISH) — Refinamento visual e tipográfico
 
-- [ ] **POLISH-01**: Eyebrow labels adicionados às seções principais (`PLATAFORMAS`, `COMO FUNCIONA`, `ECOSSISTEMA`)
-- [ ] **POLISH-02**: Texto informacional usa no mínimo `text-gray-400` (WCAG AA em fundo escuro)
-- [ ] **POLISH-03**: Hover nos cards de plataforma: elevação + border glow com cor da plataforma (indigo/rose)
-- [ ] **POLISH-04**: Stats com micro-contexto: uma linha de referência abaixo de cada contador
+- [x] **POLISH-01**: Eyebrow labels adicionados às seções principais (`PLATAFORMAS`, `COMO FUNCIONA`, `ECOSSISTEMA`)
+- [x] **POLISH-02**: Texto informacional usa no mínimo `text-gray-400` (WCAG AA em fundo escuro)
+- [x] **POLISH-03**: Hover nos cards de plataforma: elevação + border glow com cor da plataforma (indigo/rose)
+- [x] **POLISH-04**: Stats com micro-contexto: uma linha de referência abaixo de cada contador
 - [ ] **POLISH-05**: `prefers-reduced-motion` implementado — animações contínuas pausam via `@media`
 - [ ] **POLISH-06**: `next build` produz output sem erros e static export funciona localmente
 
@@ -100,10 +100,10 @@
 | HERO-03 | Phase 2 | Pending |
 | HERO-04 | Phase 2 | Pending |
 | HERO-05 | Phase 2 | Pending |
-| POLISH-01 | Phase 2 | Pending |
-| POLISH-02 | Phase 2 | Pending |
-| POLISH-03 | Phase 2 | Pending |
-| POLISH-04 | Phase 2 | Pending |
+| POLISH-01 | Phase 2 | Complete |
+| POLISH-02 | Phase 2 | Complete |
+| POLISH-03 | Phase 2 | Complete |
+| POLISH-04 | Phase 2 | Complete |
 | POLISH-05 | Phase 2 | Pending |
 | POLISH-06 | Phase 2 | Pending |
 | UC-01 | Phase 3 | Pending |
