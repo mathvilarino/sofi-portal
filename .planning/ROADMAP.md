@@ -28,7 +28,14 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Primitivas UI (`Section`, `StatusDot`, `AnimatedCounter`) existem em `components/ui/` sem conhecimento de domínio
   4. Cada seção da página existe como arquivo próprio em `components/sections/`; sub-componentes de plataforma em `components/platform/`
   5. `next build` passa sem erros e o static export funciona localmente — verificado após cada passo de extração
-**Plans**: TBD
+**Plans**: 4 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Extract data layer (app/data/*.ts) and run Gate 1 build
+- [ ] 01-02-PLAN.md — Extract UI primitives (components/ui/) and run Gate 2 build
+- [ ] 01-03-PLAN.md — Extract platform sub-components (components/platform/) and run Gate 3 build
+- [ ] 01-04-PLAN.md — Extract all sections (components/sections/), reduce page.tsx, run Gate 4 build
+
 **UI hint**: yes
 
 ### Phase 2: Identidade Visual
@@ -63,6 +70,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/TBD | Not started | - |
+| 1. Foundation | 0/4 | Not started | - |
 | 2. Identidade Visual | 0/TBD | Not started | - |
 | 3. Casos de Uso | 0/TBD | Not started | - |
