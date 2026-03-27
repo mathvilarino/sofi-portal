@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Phase 1 context gathered (discuss mode)
-last_updated: "2026-03-27T01:30:12.770Z"
+stopped_at: Completed 01-foundation-01-01-PLAN.md
+last_updated: "2026-03-27T01:58:10.411Z"
 last_activity: 2026-03-27 — Roadmap created
 progress:
   total_phases: 3
   completed_phases: 0
-  total_plans: 0
-  completed_plans: 0
+  total_plans: 4
+  completed_plans: 1
   percent: 0
 ---
 
@@ -52,6 +52,7 @@ Progress: [░░░░░░░░░░] 0%
 - Trend: -
 
 *Updated after each plan completion*
+| Phase 01-foundation P01 | 3 | 2 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -63,6 +64,9 @@ Recent decisions affecting current work:
 - [Roadmap]: Extração de page.tsx em 4 camadas (data, ui, sections, platform); gate obrigatório next build após cada passo
 - [Roadmap]: Logo ecossistema como SVG inline com animação CSS stroke-dashoffset (evita hydration mismatch no static export)
 - [Roadmap]: LazyMotion + domAnimation estabelecido na Phase 2 antes de qualquer uso de motion.* (cap bundle ~15 KB)
+- [Phase 01-foundation]: Data files are pure TypeScript (no use client) so they are importable from any component context
+- [Phase 01-foundation]: Tailwind class strings copied verbatim as full literals — no interpolation — to maintain Tailwind CSS purging (ARCH-08)
+- [Phase 01-foundation]: app/page.tsx left unchanged in Plan 01 — data extracted but wiring deferred to Plan 02
 
 ### Pending Todos
 
@@ -75,6 +79,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-27T01:30:12.765Z
-Stopped at: Phase 1 context gathered (discuss mode)
-Resume file: .planning/phases/01-foundation/01-CONTEXT.md
+Last session: 2026-03-27T01:58:10.403Z
+Stopped at: Completed 01-foundation-01-01-PLAN.md
+Resume file: None
