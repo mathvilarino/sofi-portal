@@ -27,7 +27,7 @@ O visitante deve entender o SOFI Data Ecosystem em segundos e saber exatamente p
 - [ ] Casos de uso por plataforma: perfis de usuário + cenários de negócio
 - [ ] Tipografia e hierarquia visual melhoradas
 - [ ] Animações e micro-interações mais polidas
-- [ ] Refatoração da estrutura de código (componentes e dados separados)
+- [x] Refatoração da estrutura de código (componentes e dados separados) — Validated in Phase 1: Foundation
 
 ### Out of Scope
 
@@ -38,8 +38,9 @@ O visitante deve entender o SOFI Data Ecosystem em segundos e saber exatamente p
 
 ## Context
 
-**Codebase atual:**
-- `app/page.tsx` ~1000 linhas com tudo embutido (data, componentes, página)
+**Codebase atual (Phase 1 complete — 2026-03-27):**
+- `app/page.tsx` 27 linhas — Server Component puro, apenas imports e JSX de composição
+- Arquitetura em 4 camadas: `app/data/` (6 arquivos), `components/ui/` (3 primitivas), `components/platform/` (3 sub-componentes), `components/sections/` (10 seções)
 - Stack: Next.js 14 static export, Tailwind CSS, Framer Motion, Lucide React
 - URLs das plataformas hardcoded (IPs internos: 172.16.10.14)
 - Idioma: Português (pt-BR)
