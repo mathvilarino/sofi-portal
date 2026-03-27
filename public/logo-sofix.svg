@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <!-- Background gradient (brand-500 → purple-600) -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+    <!-- Outer glow -->
+    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="80%" stop-color="transparent"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.25"/>
+    </radialGradient>
+    <!-- Wing gradient for depth -->
+    <linearGradient id="wingGradL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="white" stop-opacity="1"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0.75"/>
+    </linearGradient>
+    <linearGradient id="wingGradR" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="white" stop-opacity="1"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0.75"/>
+    </linearGradient>
+    <!-- Data node glow -->
+    <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c4b5fd" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#c4b5fd" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Inner wing accent -->
+    <linearGradient id="innerAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer glow ring -->
+  <circle cx="100" cy="100" r="100" fill="url(#glowGrad)"/>
+
+  <!-- Main circle with gradient -->
+  <circle cx="100" cy="100" r="94" fill="url(#bgGrad)"/>
+
+  <!-- Subtle inner ring -->
+  <circle cx="100" cy="100" r="94" fill="none" stroke="white" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- Data network lines (connecting wing tips — subtle) -->
+  <line x1="42" y1="72" x2="54" y2="132" stroke="#c4b5fd" stroke-opacity="0.15" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="158" y1="72" x2="146" y2="132" stroke="#c4b5fd" stroke-opacity="0.15" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="42" y1="72" x2="158" y2="72" stroke="#c4b5fd" stroke-opacity="0.08" stroke-width="0.75" stroke-dasharray="2 4"/>
+  <line x1="54" y1="132" x2="146" y2="132" stroke="#c4b5fd" stroke-opacity="0.08" stroke-width="0.75" stroke-dasharray="2 4"/>
+
+  <!-- Butterfly body -->
+  <ellipse cx="100" cy="108" rx="3.5" ry="22" fill="white" opacity="0.95"/>
+
+  <!-- Antennae with data dots -->
+  <path d="M100 86 Q92 68 86 60" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="85" cy="59" r="4" fill="url(#nodeGlow)"/>
+  <circle cx="85" cy="59" r="2.5" fill="white"/>
+  <path d="M100 86 Q108 68 114 60" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="115" cy="59" r="4" fill="url(#nodeGlow)"/>
+  <circle cx="115" cy="59" r="2.5" fill="white"/>
+
+  <!-- Upper left wing -->
+  <path d="M97 90 C80 72 52 62 42 72 C32 82 38 96 48 102 C58 108 80 108 97 100Z" fill="url(#wingGradL)"/>
+  <!-- Inner detail upper left -->
+  <path d="M92 92 C82 80 64 74 58 80 C52 86 56 94 62 98 C68 102 82 100 92 96Z" fill="url(#innerAccent)"/>
+
+  <!-- Lower left wing -->
+  <path d="M97 104 C80 108 58 118 54 132 C50 146 62 150 72 146 C82 142 92 126 97 112Z" fill="url(#wingGradL)" opacity="0.9"/>
+  <!-- Inner detail lower left -->
+  <path d="M94 108 C84 112 70 120 68 130 C66 140 72 142 78 138 C84 134 90 124 94 114Z" fill="url(#innerAccent)"/>
+
+  <!-- Upper right wing -->
+  <path d="M103 90 C120 72 148 62 158 72 C168 82 162 96 152 102 C142 108 120 108 103 100Z" fill="url(#wingGradR)"/>
+  <!-- Inner detail upper right -->
+  <path d="M108 92 C118 80 136 74 142 80 C148 86 144 94 138 98 C132 102 118 100 108 96Z" fill="url(#innerAccent)"/>
+
+  <!-- Lower right wing -->
+  <path d="M103 104 C120 108 142 118 146 132 C150 146 138 150 128 146 C118 142 108 126 103 112Z" fill="url(#wingGradR)" opacity="0.9"/>
+  <!-- Inner detail lower right -->
+  <path d="M106 108 C116 112 130 120 132 130 C134 140 128 142 122 138 C116 134 110 124 106 114Z" fill="url(#innerAccent)"/>
+
+  <!-- Data nodes at wing tips -->
+  <circle cx="42" cy="72" r="3.5" fill="url(#nodeGlow)"/>
+  <circle cx="42" cy="72" r="2" fill="white" opacity="0.7"/>
+
+  <circle cx="158" cy="72" r="3.5" fill="url(#nodeGlow)"/>
+  <circle cx="158" cy="72" r="2" fill="white" opacity="0.7"/>
+
+  <circle cx="54" cy="132" r="3" fill="url(#nodeGlow)"/>
+  <circle cx="54" cy="132" r="1.5" fill="white" opacity="0.6"/>
+
+  <circle cx="146" cy="132" r="3" fill="url(#nodeGlow)"/>
+  <circle cx="146" cy="132" r="1.5" fill="white" opacity="0.6"/>
+</svg>

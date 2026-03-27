@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+  </defs>
+  <!-- Circle -->
+  <circle cx="16" cy="16" r="15" fill="url(#bg)"/>
+  <!-- Simplified butterfly — optimized for 16-32px -->
+  <!-- Body -->
+  <ellipse cx="16" cy="17" rx="0.8" ry="4" fill="white"/>
+  <!-- Antennae -->
+  <path d="M16 13 Q14.5 10 13.5 9" fill="none" stroke="white" stroke-width="0.8" stroke-linecap="round"/>
+  <circle cx="13.3" cy="8.8" r="0.8" fill="white"/>
+  <path d="M16 13 Q17.5 10 18.5 9" fill="none" stroke="white" stroke-width="0.8" stroke-linecap="round"/>
+  <circle cx="18.7" cy="8.8" r="0.8" fill="white"/>
+  <!-- Upper wings (simplified) -->
+  <path d="M15 14 C13 11.5 9 10 7 11.5 C5 13 6 15.5 8 16.5 C10 17.5 13.5 17 15 16Z" fill="white" opacity="0.95"/>
+  <path d="M17 14 C19 11.5 23 10 25 11.5 C27 13 26 15.5 24 16.5 C22 17.5 18.5 17 17 16Z" fill="white" opacity="0.95"/>
+  <!-- Lower wings (simplified) -->
+  <path d="M15 17 C13 17.5 10 19 9 21.5 C8 24 10 24.5 11.5 23.5 C13 22.5 14.5 20 15 18Z" fill="white" opacity="0.85"/>
+  <path d="M17 17 C19 17.5 22 19 23 21.5 C24 24 22 24.5 20.5 23.5 C19 22.5 17.5 20 17 18Z" fill="white" opacity="0.85"/>
+</svg>
