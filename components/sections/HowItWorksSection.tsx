@@ -9,8 +9,9 @@ export function HowItWorksSection() {
       <div className="max-w-5xl mx-auto relative">
         <Section>
           <div className="text-center mb-14">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500 mb-3">COMO FUNCIONA</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Como funciona</h2>
-            <p className="text-gray-500 max-w-lg mx-auto">
+            <p className="text-gray-400 max-w-lg mx-auto">
               Da conexão ao consumo em 4 passos simples. Sem ETL, sem cópias, sem complexidade.
             </p>
           </div>

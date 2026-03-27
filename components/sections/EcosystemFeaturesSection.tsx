@@ -7,8 +7,9 @@ export function EcosystemFeaturesSection() {
       <div className="max-w-6xl mx-auto relative">
         <Section>
           <div className="text-center mb-14">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500 mb-3">ECOSSISTEMA</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Tudo o que precisa, integrado</h2>
-            <p className="text-gray-500 max-w-lg mx-auto">
+            <p className="text-gray-400 max-w-lg mx-auto">
               Funcionalidades enterprise-grade distribuídas entre as duas plataformas do ecossistema SOFI.
             </p>
           </div>
