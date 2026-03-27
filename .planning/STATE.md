@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Phase 1 context gathered (discuss mode)
-last_updated: "2026-03-27T01:53:19.308Z"
-last_activity: 2026-03-27 -- Phase 01 execution started
+stopped_at: Completed 01-foundation/01-02-PLAN.md — UI primitives extracted, Gate 2 passed
+last_updated: "2026-03-27T02:02:37.053Z"
+last_activity: 2026-03-27
 progress:
   total_phases: 3
   completed_phases: 0
   total_plans: 4
-  completed_plans: 0
+  completed_plans: 2
   percent: 0
 ---
 
@@ -26,9 +26,9 @@ See: .planning/PROJECT.md (updated 2026-03-26)
 ## Current Position
 
 Phase: 01 (foundation) — EXECUTING
-Plan: 1 of 4
-Status: Executing Phase 01
-Last activity: 2026-03-27 -- Phase 01 execution started
+Plan: 2 of 4
+Status: Ready to execute
+Last activity: 2026-03-27
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -52,6 +52,7 @@ Progress: [░░░░░░░░░░] 0%
 - Trend: -
 
 *Updated after each plan completion*
+| Phase 01-foundation P02 | 8 | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -63,6 +64,8 @@ Recent decisions affecting current work:
 - [Roadmap]: Extração de page.tsx em 4 camadas (data, ui, sections, platform); gate obrigatório next build após cada passo
 - [Roadmap]: Logo ecossistema como SVG inline com animação CSS stroke-dashoffset (evita hydration mismatch no static export)
 - [Roadmap]: LazyMotion + domAnimation estabelecido na Phase 2 antes de qualquer uso de motion.* (cap bundle ~15 KB)
+- [Phase 01-foundation]: useInView colocated in Section.tsx — only Section uses it, no shared hooks/ file needed (D-03)
+- [Phase 01-foundation]: Gate 2 (npm run build) confirmed passing after UI primitives extraction — all three components compile standalone
 
 ### Pending Todos
 
@@ -75,6 +78,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-27T01:30:12.765Z
-Stopped at: Phase 1 context gathered (discuss mode)
-Resume file: .planning/phases/01-foundation/01-CONTEXT.md
+Last session: 2026-03-27T02:02:37.045Z
+Stopped at: Completed 01-foundation/01-02-PLAN.md — UI primitives extracted, Gate 2 passed
+Resume file: None
