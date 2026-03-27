@@ -72,29 +72,33 @@ Declared values (all multiples of 4, following 8-point scale):
 
 ## Typography
 
-Four roles, declared exactly. All sizes reference Inter (sans-serif).
+Exactly 4 declared roles. All sizes reference Inter (sans-serif) except where `font-mono` is noted.
+
+### Canonical Weights
+
+Two weights only:
+
+| Weight Name | Value | Usage |
+|-------------|-------|-------|
+| Heavy | 900 (`font-black`) | Display wordmark, stat numbers, section headings — see per-role implementation notes |
+| Regular | 400 (`font-normal`) | Body copy, all labels, utility text |
+
+**Implementation note:** Tailwind classes `font-bold` (700), `font-semibold` (600), and `font-medium` (500) are permitted as subordinate implementation details within the Heavy role for heading hierarchy — they do not constitute independently declared weights. The contract weight is either Heavy (900) or Regular (400).
+
+### Type Scale
 
 | Role | Size | Weight | Line Height | Tailwind Classes | Usage |
 |------|------|--------|-------------|-----------------|-------|
-| Display | 72–144px (responsive) | 900 (font-black) | 0.9 | `text-7xl sm:text-8xl lg:text-9xl font-black leading-[0.9]` | Hero "SOFI" wordmark only |
-| Heading | 30–36px | 700 (font-bold) | 1.2 | `text-3xl sm:text-4xl font-bold` | Section titles (h2) |
-| Subheading | 18px | 700 (font-bold) | 1.3 | `text-lg font-bold` | Card titles (h3), stat labels |
-| Body | 14–16px | 400 (font-normal) or 500 (font-medium) | 1.5–1.6 | `text-sm text-gray-400 leading-relaxed` | Descriptions, card body copy |
-
-**Additional type roles (already established):**
-
-| Role | Size | Weight | Classes | Usage |
-|------|------|--------|---------|-------|
-| Label / Eyebrow | 10–12px | 600 (font-semibold) | `text-[10px] sm:text-xs font-semibold uppercase tracking-widest` | Platform subtitles, section eyebrow labels (POLISH-01) |
-| Stat number | 30–36px | 900 (font-black) | `text-3xl sm:text-4xl font-black tabular-nums` | AnimatedCounter output |
-| Micro | 11px | 400 | `text-[11px] text-gray-600` | Stat sublabels, URL footnotes, micro-context lines |
-| Mono | 11px | 400 | `text-[11px] font-mono` | Platform URL display in PlatformCard |
+| Display | 72–144px (responsive) | Heavy (900) | 0.9 | `text-7xl sm:text-8xl lg:text-9xl font-black leading-[0.9]` | Hero "SOFI" wordmark only |
+| Heading | 30–36px | Heavy (900) | 1.2 | `text-3xl sm:text-4xl font-black tabular-nums` for stat numbers; `text-3xl sm:text-4xl font-bold` for section titles (h2) | Section titles (h2), card titles (h3), AnimatedCounter output — same size range, unified role |
+| Body | 14–18px | Regular (400) | 1.5–1.6 | `text-sm text-gray-400 leading-relaxed` / `text-lg font-bold` for card titles | Descriptions, card body copy, card titles (h3), card stat labels. **Label/Eyebrow variant:** `text-[10px] sm:text-xs font-semibold uppercase tracking-widest` — this is a Body modifier (uppercase + tracking-widest), not a separate size role |
+| Utility | 11–12px | Regular (400) | 1.4 | `text-[11px] text-gray-600` / `text-[11px] font-mono` | Stat sublabels, URL footnotes, micro-context lines, platform URL display in PlatformCard. Mono variant uses `font-mono` (JetBrains Mono) at the same size |
 
 **Phase 2 additions (required by HERO-01, POLISH-01):**
-- Hero headline upgrades to `font-black` (weight 900) — already in place for "SOFI" wordmark; the new ecosystem headline must also use weight 800 minimum per HERO-01
-- Eyebrow labels use `text-xs font-semibold uppercase tracking-[0.2em]` — new addition for PLATAFORMAS, COMO FUNCIONA, ECOSSISTEMA
+- Hero ecosystem headline uses weight 800 minimum per HERO-01 — implemented as `font-black` (Heavy role)
+- Eyebrow labels use `text-xs font-semibold uppercase tracking-[0.2em]` — Body modifier, not a new role
 
-**WCAG AA constraint (POLISH-02):** All informational body text must be `text-gray-400` minimum on `#030712` background. `text-gray-600` (`#4b5563`) fails contrast on `#030712` — reserved for decorative-only micro text (stat sublabels, URL footnotes). Any copy that conveys information must use `text-gray-400` (`#9ca3af`) or lighter.
+**WCAG AA constraint (POLISH-02):** All informational body text must be `text-gray-400` minimum on `#030712` background. `text-gray-600` (`#4b5563`) fails contrast on `#030712` — reserved for decorative-only Utility text (stat sublabels, URL footnotes). Any copy that conveys information must use `text-gray-400` (`#9ca3af`) or lighter.
 
 **Source:** `components/sections/HeroSection.tsx`, `components/platform/PlatformCard.tsx`, REQUIREMENTS.md POLISH-02, HERO-01
 
@@ -224,28 +228,6 @@ prefers-reduced-motion: scale/transform should be skipped; glow can remain
   }
 }
 ```
-
----
-
-## Spacing Scale
-
-Declared values (must be multiples of 4):
-
-| Token | Value | Usage |
-|-------|-------|-------|
-| xs | 4px | Icon gaps, inline padding |
-| sm | 8px | Compact element spacing |
-| md | 16px | Default element spacing |
-| lg | 24px | Section padding |
-| xl | 32px | Layout gaps |
-| 2xl | 48px | Major section breaks |
-| 3xl | 64px | Page-level spacing |
-
-Exceptions:
-- NavBar height: 64px (h-16) — fixed
-- Hero section: full viewport height
-- Platform card logo: 44px touch target minimum
-- Section vertical padding: 96px (`py-24`) — existing pattern, preserve
 
 ---
 
