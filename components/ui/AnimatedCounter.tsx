@@ -12,17 +12,36 @@ export function AnimatedCounter({
   visible: boolean;
 }) {
   const [count, setCount] = useState(0);
+  const [isDone, setIsDone] = useState(false);
+
   useEffect(() => {
     if (!visible) return;
-    if (end === 0) { setCount(0); return; }
+    if (end === 0) { 
+      setCount(0); 
+      setIsDone(true);
+      return; 
+    }
+    
     let current = 0;
     const step = Math.max(1, Math.floor(end / 30));
+    
     const interval = setInterval(() => {
       current += step;
-      if (current >= end) { setCount(end); clearInterval(interval); }
-      else setCount(current);
+      if (current >= end) { 
+        setCount(end); 
+        setIsDone(true);
+        clearInterval(interval); 
+      } else {
+        setCount(current);
+      }
     }, 30);
+    
     return () => clearInterval(interval);
   }, [visible, end]);
-  return <>{count}{suffix}</>;
+
+  return (
+    <span className={`inline-block origin-bottom ${isDone ? "animate-pop" : ""}`}>
+      {count}{suffix}
+    </span>
+  );
 }

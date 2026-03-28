@@ -52,8 +52,8 @@ export const platforms: Platform[] = [
     subtitle: "Data as Code",
     description:
       "Virtualização de dados com VDBs thin-clone, snapshots incrementais, CDC em tempo real e 50+ regras de masking com detecção automática de PII.",
-    url: "http://172.16.10.14:3000",
-    apiUrl: "http://172.16.10.14:8000",
+    url: "https://sofitest.dtsofi.com",
+    apiUrl: "https://api.sofitest.dtsofi.com",
     logo: "/logo-sofix.svg",
     gradient: "from-indigo-500 via-purple-500 to-violet-600",
     gradientBtn:
@@ -83,8 +83,8 @@ export const platforms: Platform[] = [
     subtitle: "The Universal Semantic Layer",
     description:
       "Catálogo semântico com Design Studio visual, lineage column-level, data quality e consumo via REST, OData, SQL ou linguagem natural.",
-    url: "http://172.16.10.14:3010",
-    apiUrl: "http://172.16.10.14:8010",
+    url: "https://sofivirtualization.dtsofi.com",
+    apiUrl: "https://api.sofivirtualization.dtsofi.com",
     logo: "/logo-sofi.png",
     gradient: "from-rose-500 via-red-500 to-pink-600",
     gradientBtn:

@@ -30,28 +30,28 @@ export function PlatformCard({
         boxShadow: hoveredCard === platform.id ? `0 0 80px ${platform.glowColor}` : "none",
       }}
     >
-      <div className={`h-[2px] w-full bg-gradient-to-r ${platform.gradient} opacity-40 group-hover:opacity-100 transition-opacity duration-500`} />
+      <div className={`h-[2px] w-full bg-gradient-to-r ${platform.gradient} opacity-40 group-hover:opacity-100 transition-opacity duration-500 bg-[length:200%_auto] group-hover:animate-text-gradient`} />
 
       <div className="p-7 sm:p-8">
         {/* Header */}
         <div className="flex items-start gap-4 mb-4">
-          <div className={`rounded-xl border ${platform.accentBorder} ${platform.accentBg} overflow-hidden flex-shrink-0 group-hover:scale-105 transition-transform duration-300`}>
-            <Image src={platform.logo} alt={`${platform.name} logo`} width={44} height={44} className="rounded-xl" />
+          <div className={`rounded-xl border ${platform.accentBorder} ${platform.accentBg} overflow-hidden flex-shrink-0 group-hover:scale-105 transition-transform duration-300 flex items-center justify-center p-1.5`}>
+            <Image src={platform.logo} alt={`${platform.name} logo`} width={34} height={34} className="rounded-md object-contain" />
           </div>
           <div className="flex-1 min-w-0">
-            <h3 className="text-lg font-bold text-white mb-0.5">{platform.name}</h3>
+            <h3 className="text-lg font-bold text-[var(--foreground)] mb-0.5">{platform.name}</h3>
             <p className={`text-[10px] font-semibold uppercase tracking-widest ${platform.accentColor} opacity-60`}>{platform.subtitle}</p>
           </div>
           <StatusDot url={platform.url} />
         </div>
 
         {/* Description */}
-        <p className="text-sm text-gray-400 leading-relaxed mb-4">{platform.description}</p>
+        <p className="text-sm text-[var(--muted)] leading-relaxed mb-4">{platform.description}</p>
 
         {/* Highlights */}
         <div className="flex flex-wrap gap-1.5 mb-4">
           {platform.highlights.map((h) => (
-            <span key={h.label} className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-medium bg-white/[0.04] border border-white/[0.06] text-gray-300">
+            <span key={h.label} className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-medium bg-[var(--surface)] border border-[var(--border)] text-[var(--muted)]">
               <h.icon className={`w-2.5 h-2.5 ${h.color}`} />
               {h.label}
             </span>
@@ -66,7 +66,7 @@ export function PlatformCard({
         {/* Features */}
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-3 gap-y-1.5 mb-5">
           {platform.features.map((feature) => (
-            <div key={feature.label} className="flex items-center gap-1.5 text-[12px] text-gray-400 group-hover:text-gray-300 transition-colors">
+            <div key={feature.label} className="flex items-center gap-1.5 text-[12px] text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors">
               <feature.icon className={`w-3 h-3 ${platform.accentColor} opacity-40 group-hover:opacity-70 transition-opacity flex-shrink-0`} />
               {feature.label}
             </div>
@@ -78,7 +78,7 @@ export function PlatformCard({
           <span className={`inline-flex items-center gap-2 px-5 py-2 rounded-lg text-sm font-semibold text-white bg-gradient-to-r ${platform.gradientBtn} transition-all duration-300 shadow-lg shadow-black/20`}>
             Acessar <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
           </span>
-          <span className="text-[11px] text-gray-700 font-mono hidden sm:block">{platform.url.replace("http://", "")}</span>
+          <span className="text-[11px] text-[var(--muted-foreground)] font-mono hidden sm:block">{platform.url.replace("https://", "")}</span>
         </div>
       </div>
     </a>

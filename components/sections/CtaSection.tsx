@@ -5,16 +5,16 @@ import { Section } from "@/components/ui/Section";
 
 export function CtaSection() {
   return (
-    <div className="relative px-6 py-24">
+    <section className="relative px-6 py-24" aria-label="Call to action">
       <div className="max-w-3xl mx-auto">
         <Section>
           <div className="rounded-2xl glass p-10 sm:p-14 text-center relative overflow-hidden">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[200px] bg-indigo-500/[0.06] rounded-full blur-3xl" />
-            <div className="absolute bottom-0 right-1/4 w-[300px] h-[150px] bg-rose-500/[0.04] rounded-full blur-3xl" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[200px] bg-indigo-500/[0.06] rounded-full blur-3xl" aria-hidden="true" />
+            <div className="absolute bottom-0 right-1/4 w-[300px] h-[150px] bg-rose-500/[0.04] rounded-full blur-3xl" aria-hidden="true" />
 
             <div className="relative z-10">
-              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">Pronto para começar?</h2>
-              <p className="text-gray-500 mb-8 max-w-md mx-auto">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[var(--foreground)] mb-4">Pronto para começar?</h2>
+              <p className="text-[var(--muted)] mb-8 max-w-md mx-auto">
                 Acesse qualquer plataforma e comece a virtualizar seus dados em minutos. Sem cartão de crédito.
               </p>
 
@@ -40,6 +40,6 @@ export function CtaSection() {
           </div>
         </Section>
       </div>
-    </div>
+    </section>
   );
 }
